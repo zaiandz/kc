@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b47">
+  <title>湖北视感闪租 · 相机库存管理</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="corporate.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="3"/><rect x="13" y="3" width="8" height="5" rx="2.5"/><rect x="13" y="10" width="8" height="11" rx="3"/><rect x="3" y="13" width="8" height="8" rx="3"/></symbol>
+    <symbol id="icon-inventory" viewBox="0 0 24 24"><path d="M4 7.5 12 3l8 4.5-8 4.5-8-4.5Z"/><path d="M4 7.5V16l8 5 8-5V7.5"/><path d="M12 12v9"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 7h3l1.5-2h7L17 7h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.8 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.7 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M10.3 4.1 2.8 18a2 2 0 0 0 1.8 3h14.8a2 2 0 0 0 1.8-3L13.7 4.1a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14"/><path d="M10 11v6M14 11v6"/></symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24"><path d="m14 5 5 5L8 21H3v-5L14 5Z"/><path d="m12 7 5 5"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="icon-move" viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></symbol>
+  </svg>
+
+  <div class="file-mode-guard hidden" id="fileModeGuard">
+    <div class="file-mode-card">
+      <div class="file-mode-icon"><svg><use href="#icon-alert"></use></svg></div>
+      <span class="eyebrow">STARTUP CHECK</span>
+      <h2>请通过 start-website.bat 启动网站</h2>
+      <p id="fileModeMessage">检测到当前是直接打开 index.html。此模式无法写入 data/state.json，也无法解析 Excel / Word 文件。</p>
+      <div class="file-mode-steps">
+        <div><b>1</b><span>关闭当前页面和所有旧启动窗口</span></div>
+        <div><b>2</b><span>双击网站文件夹中的 start-website.bat</span></div>
+        <div><b>3</b><span>等待浏览器自动打开正确网址</span></div>
+      </div>
+      <button class="btn btn-primary" id="fileModeRetry">重新检测本地服务</button>
+      <small>如果服务已经启动，点击按钮后会自动跳转。</small>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><svg><use href="#icon-camera"></use></svg></div>
+        <div><strong>湖北视感闪租</strong><span>相机库存管理</span></div>
+      </div>
+      <nav class="main-nav" aria-label="主导航">
+        <button class="nav-item active" data-view="dashboard"><svg><use href="#icon-dashboard"></use></svg><span>库存看板</span></button>
+        <button class="nav-item" data-view="inventory"><svg><use href="#icon-inventory"></use></svg><span>相机库存</span><span class="nav-count" id="navInventoryCount">0</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="storage-card" id="storageCard">
+          <div class="storage-icon"><svg><use href="#icon-lock"></use></svg></div>
+          <div><strong id="storageTitle">检测存储中</strong><span id="storageText">请稍候…</span></div>
+        </div>
+        <div class="sidebar-date" id="sidebarDate"></div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-title">
+          <button class="icon-button mobile-menu" id="mobileMenuButton" aria-label="打开菜单"><svg><use href="#icon-menu"></use></svg></button>
+          <div><h1 id="pageTitle">库存看板</h1><p id="pageSubtitle">六大类库存与保修状态总览</p></div>
+        </div>
+        <div class="topbar-actions">
+          <div class="save-indicator" id="saveIndicator"><i></i><span>正在连接</span></div>
+          <button class="btn btn-light import-button" data-action="import-document" title="支持 xlsx、xlsm、xltx、xltm、csv、tsv、docx、docm、dotx、dotm"><svg><use href="#icon-upload"></use></svg><span>导入 Excel / Word</span></button>
+          <button class="btn btn-light" data-action="add-subcategory"><svg><use href="#icon-folder"></use></svg><span>新增小类目</span></button>
+          <button class="btn btn-primary" data-action="add-model"><svg><use href="#icon-plus"></use></svg><span>新增机型</span></button>
+          <input class="hidden" type="file" id="documentFileInput" accept=".xlsx,.xlsm,.xltx,.xltm,.csv,.tsv,.docx,.docm,.dotx,.dotm,.xls,.doc,.xlsb">
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="view active" data-view-panel="dashboard">
+          <div class="hero-row">
+            <div>
+              <span class="eyebrow">INVENTORY OVERVIEW</span>
+              <h2>相机库存看板</h2>
+              <p>按手持云台、全景运动相机、微单、卡片、CCD 和落地三脚架分类统计。</p>
+            </div>
+            <button class="btn btn-dark" data-action="add-model"><svg><use href="#icon-plus"></use></svg>录入新机型</button>
+          </div>
+
+          <div class="metric-grid" id="metricGrid"></div>
+
+          <div class="dashboard-grid">
+            <section class="panel span-2">
+              <div class="panel-head">
+                <div><h3>六大类库存分布</h3><p>每个大类下的小类目与机型数量</p></div>
+                <button class="text-button" data-go-view="inventory">查看全部库存</button>
+              </div>
+              <div class="category-overview" id="categoryOverview"></div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head"><div><h3>保修 / 随心换提醒</h3><p>90 天内到期及已过期项目</p></div></div>
+              <div class="alert-list" id="warrantyAlerts"></div>
+            </section>
+
+            <section class="panel span-2">
+              <div class="panel-head"><div><h3>最近录入机型</h3><p>按添加时间倒序排列</p></div></div>
+              <div class="recent-list" id="recentModels"></div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head"><div><h3>库存状态</h3><p>在库、售出与保修概况</p></div></div>
+              <div class="status-summary" id="statusSummary"></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" data-view-panel="inventory">
+          <div class="hero-row">
+            <div>
+              <span class="eyebrow">CAMERA INVENTORY</span>
+              <h2>相机库存</h2>
+              <p>大类固定，小类目和机型可自由添加；表格内容修改后自动保存到网站文件。</p>
+            </div>
+            <div class="hero-actions">
+              <button class="btn btn-light import-button" data-action="import-document" title="支持 xlsx、xlsm、xltx、xltm、csv、tsv、docx、docm、dotx、dotm"><svg><use href="#icon-upload"></use></svg>导入 Excel / Word</button>
+              <button class="btn btn-light" data-action="collapse-all">全部收起</button>
+              <button class="btn btn-light" data-action="expand-all">全部展开</button>
+              <button class="btn btn-primary" data-action="add-model"><svg><use href="#icon-plus"></use></svg>新增机型</button>
+            </div>
+          </div>
+
+          <section class="import-report hidden" id="importReport"></section>
+
+          <section class="panel inventory-panel">
+            <div class="inventory-toolbar">
+              <label class="search-field"><svg><use href="#icon-search"></use></svg><input id="inventorySearch" type="search" placeholder="搜索型号、SN 串码或备注…"></label>
+              <select id="categoryFilter" aria-label="筛选大类"></select>
+              <select id="subcategoryFilter" aria-label="筛选小类目"><option value="">全部小类目</option></select>
+              <select id="statusFilter" aria-label="筛选状态">
+                <option value="">全部状态</option>
+                <option value="stock">在库</option>
+                <option value="sold">已售出</option>
+                <option value="warranty">在保</option>
+                <option value="expiring">90天内到期</option>
+              </select>
+              <span class="result-count" id="inventoryCount"></span>
+            </div>
+            <div class="inventory-tree" id="inventoryTree"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="selection-bar hidden" id="selectionBar">
+    <div class="selection-bar-info"><span class="selection-bar-icon"><svg><use href="#icon-check"></use></svg></span><div><strong><b id="selectionCount">0</b> 条 SN 已选择</strong><small>可批量移动到一个已有或新建的小类目</small></div></div>
+    <div class="selection-bar-actions">
+      <button class="btn btn-light" data-action="clear-selection">取消选择</button>
+              <button class="btn btn-light" id="copySelectedButton" data-action="copy-selected" disabled><svg><use href="#icon-copy"></use></svg>复制同型号</button>
+              <button class="btn btn-danger" data-action="delete-selected"><svg><use href="#icon-trash"></use></svg>批量删除</button>
+      <button class="btn btn-primary" data-action="move-selected"><svg><use href="#icon-move"></use></svg>批量移动到其他类目</button>
+    </div>
+  </div>
+
+
+  <div class="modal" id="subcategoryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog modal-sm" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div><span class="eyebrow">SUBCATEGORY</span><h2 id="subcategoryModalTitle">新增小类目</h2><p>选择所属大类并填写小类目名称</p></div>
+        <button class="icon-button" data-close-modal aria-label="关闭"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <form id="subcategoryForm" class="form-grid">
+        <input type="hidden" name="subcategoryId">
+        <label class="field field-full"><span>所属大类 <b>*</b></span><select name="categoryId" id="subcategoryCategory" required></select></label>
+        <label class="field field-full"><span>小类目名称 <b>*</b></span><input name="name" type="text" maxlength="30" placeholder="例如：大疆、影石、索尼、其他" required></label>
+        <div class="form-actions field-full"><button type="button" class="btn btn-light" data-close-modal>取消</button><button type="submit" class="btn btn-primary">保存小类目</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="modelModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog modal-lg" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div><span class="eyebrow">CAMERA MODEL</span><h2 id="modelModalTitle">新增机型</h2><p>SN 可留空，保存后显示“待补录 SN”；填写时仅支持字母或数字</p></div>
+        <button class="icon-button" data-close-modal aria-label="关闭"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <form id="modelForm" class="form-grid">
+        <input type="hidden" name="modelId">
+        <label class="field"><span>所属大类 <b>*</b></span><select name="categoryId" id="modelCategory" required></select></label>
+        <label class="field"><span>所属小类目 <b>*</b></span><select name="subcategoryId" id="modelSubcategory" required></select></label>
+        <label class="field"><span>型号 <b>*</b></span><input name="modelName" type="text" maxlength="60" placeholder="例如：大疆 Pocket 3" required></label>
+        <label class="field"><span>串码 SN</span><input name="sn" type="text" maxlength="32" autocomplete="off" placeholder="可留空，填写后自动保存"></label>
+        <label class="field"><span>成色</span><input name="condition" type="text" maxlength="30" placeholder="例如：99新、95新"></label>
+        <label class="field"><span>是否在保</span><select name="warrantyStatus"><option value="unknown">未知</option><option value="yes">在保</option><option value="no">不在保</option></select></label>
+        <label class="field"><span>激活时间</span><input name="activationDate" type="date"></label>
+        <label class="field"><span>在保到期时间</span><input name="warrantyEnd" type="date"></label>
+        <label class="field"><span>随心换 / 无忧换到期时间</span><input name="refreshEnd" type="date"></label>
+        <label class="field"><span>是否已出售</span><select name="sold"><option value="false">否</option><option value="true">是</option></select></label>
+        <label class="field field-full"><span>备注</span><textarea name="note" rows="3" maxlength="500" placeholder="购入渠道、配件缺失、外观问题等"></textarea></label>
+        <div class="form-actions field-full"><button type="button" class="btn btn-light" data-close-modal>取消</button><button type="submit" class="btn btn-primary">保存机型</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="moveModelModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div><span class="eyebrow">MOVE SN</span><h2>移动 SN 到其他类目</h2><p>可选择目标大类、已有小类目，或直接新建小类目</p></div>
+        <button class="icon-button" data-close-modal aria-label="关闭"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <form id="moveModelForm" class="form-grid">
+        <div class="move-summary field-full" id="moveSummary"></div>
+        <label class="field"><span>目标大类 <b>*</b></span><select name="targetCategory" id="moveTargetCategory" required></select></label>
+        <label class="field"><span>目标小类目 <b>*</b></span><select name="targetSubcategory" id="moveTargetSubcategory" required></select></label>
+        <label class="field field-full hidden" id="moveNewSubcategoryField"><span>新小类目名称 <b>*</b></span><input name="newSubcategory" id="moveNewSubcategory" type="text" maxlength="30" placeholder="例如：大疆、影石、其他"></label>
+        <div class="form-actions field-full"><button type="button" class="btn btn-light" data-close-modal>取消</button><button type="submit" class="btn btn-primary">确认移动</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="copyModelModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div><span class="eyebrow">COPY MODEL</span><h2>复制同型号机型</h2><p>仅复制型号，其他字段保持为空，复制后自行填写 SN 和相关信息</p></div>
+        <button class="icon-button" data-close-modal aria-label="关闭"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <form id="copyModelForm" class="form-grid">
+        <div class="move-summary field-full" id="copySummary"></div>
+        <label class="field field-full"><span>目标大类（与源机型相同）</span><input id="copyCategoryName" type="text" readonly></label>
+        <label class="field"><span>目标小类目 <b>*</b></span><select name="targetSubcategory" id="copyTargetSubcategory" required></select></label>
+        <label class="field"><span>复制数量 <b>*</b></span><input name="quantity" id="copyQuantity" type="number" min="1" max="100" step="1" value="1" required><small>可一次复制 1-100 条同型号机型</small></label>
+        <div class="form-actions field-full"><button type="button" class="btn btn-light" data-close-modal>取消</button><button type="submit" class="btn btn-primary">复制同型号</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal confirm-modal" id="confirmModal" aria-hidden="true">
+    <div class="modal-backdrop" data-confirm-cancel></div>
+    <div class="modal-dialog modal-xs" role="alertdialog" aria-modal="true">
+      <div class="confirm-icon"><svg><use href="#icon-alert"></use></svg></div>
+      <h2 id="confirmTitle">确认操作</h2>
+      <p id="confirmMessage"></p>
+      <div class="form-actions"><button class="btn btn-light" id="confirmCancel">取消</button><button class="btn btn-danger" id="confirmOk">确认删除</button></div>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script>
+  (() => {
+    if (location.protocol !== 'file:') return;
+    const ports = Array.from({ length: 21 }, (_, index) => 3210 + index);
+    let checking = false;
+    async function detect() {
+      if (checking) return;
+      checking = true;
+      const message = document.getElementById('fileModeMessage');
+      const button = document.getElementById('fileModeRetry');
+      if (button) { button.disabled = true; button.textContent = '正在检测…'; }
+      for (const port of ports) {
+        try {
+          const response = await fetch('http://127.0.0.1:' + port + '/api/health', { cache: 'no-store' });
+          if (response.ok) {
+            const health = await response.json();
+            if (health && health.service === 'jincang-folder-storage') {
+              location.replace('http://127.0.0.1:' + port + '/');
+              return;
+            }
+          }
+        } catch (_) {}
+      }
+      if (message) message.textContent = '没有检测到正在运行的本地服务。请双击 start-website.bat，等待启动窗口显示访问地址后，再点击重新检测。';
+      if (button) { button.disabled = false; button.textContent = '重新检测本地服务'; }
+      checking = false;
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+      const guard = document.getElementById('fileModeGuard');
+      if (guard) guard.classList.remove('hidden');
+      const button = document.getElementById('fileModeRetry');
+      if (button) button.addEventListener('click', detect);
+      detect();
+    });
+  })();
+  </script>
+  <script src="app.js" defer></script>
+</body>
+</html>
+
+
+

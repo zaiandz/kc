@@ -1,0 +1,607 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-16T06:26:23.152Z",
+  "categories": [
+    {
+      "id": "gimbal",
+      "name": "手持云台",
+      "color": "#ef603c",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-7IAZ5",
+          "name": "大疆Pocket3",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "MODEL-MVAK2CJN-NBOLF",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTZN6W0021G3Y",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-05-30",
+              "warrantyEnd": "2027-06-12",
+              "refreshEnd": "2027-06-12",
+              "sold": false,
+              "note": "剩余三次随心换",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-IL9OY",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN81002GAW8",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-08-15",
+              "warrantyEnd": "2026-10-27",
+              "refreshEnd": "2026-09-03",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-SIS2F",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN7L002CFG5",
+              "condition": "95新",
+              "warrantyStatus": "no",
+              "activationDate": "2025-08-14",
+              "warrantyEnd": "2026-09-03",
+              "refreshEnd": "2026-09-03",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-L6GT1",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN7H002BNS5",
+              "condition": "95新",
+              "warrantyStatus": "no",
+              "activationDate": "2025-07-30",
+              "warrantyEnd": "2026-07-31",
+              "refreshEnd": "2026-07-31",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-1BL0S",
+              "modelName": "大疆Pocket3",
+              "sn": "5WT4P14002A2CT",
+              "condition": "95新",
+              "warrantyStatus": "no",
+              "activationDate": "2026-01-13",
+              "warrantyEnd": "",
+              "refreshEnd": "2026-05-30",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-U0811",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTZN6N002DXJN",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-07-26",
+              "warrantyEnd": "2027-07-18",
+              "refreshEnd": "2027-07-18",
+              "sold": false,
+              "note": "剩余四次随心换",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-ZUBZ9",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN84002H2W8",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-08-17",
+              "warrantyEnd": "2027-08-16",
+              "refreshEnd": "2027-08-16",
+              "sold": false,
+              "note": "剩余四次随心换",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-XPDC3",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN7W002FRTB",
+              "condition": "95新",
+              "warrantyStatus": "no",
+              "activationDate": "2025-08-18",
+              "warrantyEnd": "2026-08-30",
+              "refreshEnd": "2026-08-19",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-PHVFT",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN7P002DPP0",
+              "condition": "95新",
+              "warrantyStatus": "no",
+              "activationDate": "2025-08-14",
+              "warrantyEnd": "2026-09-03",
+              "refreshEnd": "2026-09-03",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-M3WVS",
+              "modelName": "大疆Pocket3",
+              "sn": "5WT5N3J00SJ0G4",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-09-29",
+              "warrantyEnd": "2026-10-25",
+              "refreshEnd": "2026-10-25",
+              "sold": false,
+              "note": "剩余二次随心换",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-IWQ5Q",
+              "modelName": "大疆Pocket3",
+              "sn": "5WTCN84002GQD9",
+              "condition": "95新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-08-15",
+              "warrantyEnd": "2026-10-19",
+              "refreshEnd": "2026-09-03",
+              "sold": false,
+              "note": "随心换已到期",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVAK4A4W-EDWM4",
+          "name": "大疆Pocket4 Pro",
+          "createdAt": "2026-10-16T05:58:36.368Z",
+          "models": [
+            {
+              "id": "MODEL-MVAK2CJN-JMEHX",
+              "modelName": "大疆Pocket4 Pro",
+              "sn": "ANHXP7L002FSQ6",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-08-05",
+              "warrantyEnd": "2026-08-04",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T06:25:09.590Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-2GGQ3",
+              "modelName": "大疆Pocket4 Pro",
+              "sn": "ANHXP7G002E91V",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-08-05",
+              "warrantyEnd": "2026-08-04",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T06:25:09.590Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-FLAQ9",
+              "modelName": "大疆Pocket4 Pro",
+              "sn": "ANHWP6U006YDKR",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-08-15",
+              "warrantyEnd": "2026-08-14",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T06:25:09.590Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-8OA9A",
+              "modelName": "大疆Pocket4 Pro",
+              "sn": "ANHWP75006Z1W1",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-07-26",
+              "warrantyEnd": "2026-07-25",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T06:25:09.590Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-8I40K",
+              "modelName": "大疆Pocket4 Pro",
+              "sn": "ANHWP75006Z1NZ",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-07-26",
+              "warrantyEnd": "2026-07-25",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T06:25:09.590Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panorama",
+      "name": "全景运动相机",
+      "color": "#3e73f3",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-0OHGW",
+          "name": "影石",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-03",
+              "modelName": "影石 Ace Pro 2 运动相机",
+              "sn": "ACE224091501",
+              "condition": "99新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-04-10T03:20:00Z",
+              "updatedAt": "2026-04-10T03:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-04",
+              "modelName": "影石 Ace Pro 2 运动相机",
+              "sn": "ACE224091502",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-04-30T06:20:00Z",
+              "updatedAt": "2026-04-30T06:20:00Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJN-COD9L",
+              "modelName": "影石ACE Pro2",
+              "sn": "IBGLA25088K5VX",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-11-24",
+              "warrantyEnd": "2026-11-25",
+              "refreshEnd": "2026-11-24",
+              "sold": false,
+              "note": "随心换剩余2次",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mirrorless",
+      "name": "微单相机",
+      "color": "#7659d8",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-NX0D7",
+          "name": "佳能",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-05",
+              "modelName": "佳能 R50 微单",
+              "sn": "CANONR502301",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "套机 18-45mm 镜头",
+              "createdAt": "2026-05-20T01:20:00Z",
+              "updatedAt": "2026-05-20T01:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-06",
+              "modelName": "佳能 R50 微单",
+              "sn": "CANONR502302",
+              "condition": "9成新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-06-09T08:20:00Z",
+              "updatedAt": "2026-06-09T08:20:00Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-HYJTU",
+              "modelName": "佳能R50",
+              "sn": "284030001283",
+              "condition": "95新（黑色）",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-L1J74",
+              "modelName": "佳能R50",
+              "sn": "284030001281",
+              "condition": "95新（黑色）",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVAK2CJN-Z4QZI",
+          "name": "影石",
+          "createdAt": "2026-10-16T05:57:06.179Z",
+          "models": [
+            {
+              "id": "MODEL-MVAK2CJN-1CG8O",
+              "modelName": "影石insta X6",
+              "sn": "BXEA3ABHRESCWH",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-09-30",
+              "warrantyEnd": "2027-10-01",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-ZKEKI",
+              "modelName": "影石insta X6",
+              "sn": "BXEA3ABHR5PFCR",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-09-30",
+              "warrantyEnd": "2027-10-01",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-LUJPP",
+              "modelName": "影石insta X6",
+              "sn": "BXEA3ABHQUPH4G",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-09-30",
+              "warrantyEnd": "2027-10-01",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-WRD4I",
+              "modelName": "影石insta X6",
+              "sn": "BXEA3ABHKNBR4N",
+              "condition": "99新",
+              "warrantyStatus": "yes",
+              "activationDate": "2026-09-30",
+              "warrantyEnd": "2027-10-01",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compact",
+      "name": "卡片相机",
+      "color": "#d9901c",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-67JV7",
+          "name": "佳能",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-07",
+              "modelName": "佳能 G7 X Mark III 卡片相机",
+              "sn": "G7X3241102",
+              "condition": "99新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-06-29T02:20:00Z",
+              "updatedAt": "2026-06-29T02:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-08",
+              "modelName": "佳能 G7 X Mark III 卡片相机",
+              "sn": "G7X3241103",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-07-09T05:20:00Z",
+              "updatedAt": "2026-07-09T05:20:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccd",
+      "name": "CCD相机",
+      "color": "#2f9a63",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-NV3Q9",
+          "name": "佳能IUXS 210",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "MODEL-MVAK2CJO-7DCC5",
+              "modelName": "佳能IUXS 210",
+              "sn": "923050002397",
+              "condition": "95新(银色）",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-OD3K0",
+              "modelName": "佳能IUXS 210",
+              "sn": "923050004200",
+              "condition": "95新(紫色）",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            },
+            {
+              "id": "MODEL-MVAK2CJO-ELWPX",
+              "modelName": "佳能IUXS 210",
+              "sn": "113034005032",
+              "condition": "95新(黑色）",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T05:57:06.179Z",
+              "updatedAt": "2026-10-16T05:57:06.179Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVAL38B0-8MEJG",
+          "name": "佳能IUXS 130",
+          "createdAt": "2026-10-16T06:25:46.956Z",
+          "models": [
+            {
+              "id": "MODEL-MVAL3MKH-Y7A2W",
+              "modelName": "佳能IUXS 130",
+              "sn": "PC1472",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-16T06:26:05.441Z",
+              "updatedAt": "2026-10-16T06:26:22.701Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tripod",
+      "name": "落地三脚架",
+      "color": "#d95050",
+      "icon": "layers",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-VHRNZ",
+          "name": "富宝图",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-09",
+              "modelName": "富宝图 FY-830-MH-4A",
+              "sn": "FY830MH4A01",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "液压云台，快装板齐全",
+              "createdAt": "2026-07-24T07:20:00Z",
+              "updatedAt": "2026-07-24T07:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-10",
+              "modelName": "富宝图 FY-830-MH-4A",
+              "sn": "FY830MH4A02",
+              "condition": "9成新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "云台锁紧旋钮待更换",
+              "createdAt": "2026-08-08T03:20:00Z",
+              "updatedAt": "2026-08-08T03:20:00Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "version": 2,
+  "updatedAt": "2026-10-16T03:03:45.110Z",
+  "categories": [
+    {
+      "id": "gimbal",
+      "name": "手持云台",
+      "color": "#ef603c",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-7IAZ5",
+          "name": "大疆",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-01",
+              "modelName": "大疆 Pocket 3 手持云台",
+              "sn": "DJIP3240801",
+              "condition": "99新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "外观良好，原装收纳包",
+              "createdAt": "2026-02-09T01:20:00Z",
+              "updatedAt": "2026-02-09T01:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-02",
+              "modelName": "大疆 Pocket 3 手持云台",
+              "sn": "DJIP3240802",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "底部有轻微使用痕迹",
+              "createdAt": "2026-03-21T02:20:00Z",
+              "updatedAt": "2026-03-21T02:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-11",
+              "modelName": "大疆 Pocket 3 手持云台",
+              "sn": "DJIP3220701",
+              "condition": "8成新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": true,
+              "note": "已作为二手设备出售",
+              "createdAt": "2025-10-22T01:20:00Z",
+              "updatedAt": "2025-10-22T01:20:00Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVADT9Q7-3YOKU",
+          "name": "影石",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-OFD44",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    },
+    {
+      "id": "panorama",
+      "name": "全景运动相机",
+      "color": "#3e73f3",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-0OHGW",
+          "name": "影石",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-03",
+              "modelName": "影石 Ace Pro 2 运动相机",
+              "sn": "ACE224091501",
+              "condition": "99新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-04-10T03:20:00Z",
+              "updatedAt": "2026-04-10T03:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-04",
+              "modelName": "影石 Ace Pro 2 运动相机",
+              "sn": "ACE224091502",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-04-30T06:20:00Z",
+              "updatedAt": "2026-04-30T06:20:00Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVADT9Q7-N9JCL",
+          "name": "GoPro",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-BB029",
+          "name": "大疆",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-BSS08",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    },
+    {
+      "id": "mirrorless",
+      "name": "微单相机",
+      "color": "#7659d8",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-NX0D7",
+          "name": "佳能",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-05",
+              "modelName": "佳能 R50 微单",
+              "sn": "CANONR502301",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "套机 18-45mm 镜头",
+              "createdAt": "2026-05-20T01:20:00Z",
+              "updatedAt": "2026-05-20T01:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-06",
+              "modelName": "佳能 R50 微单",
+              "sn": "CANONR502302",
+              "condition": "9成新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-06-09T08:20:00Z",
+              "updatedAt": "2026-06-09T08:20:00Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVADT9Q7-7YTQN",
+          "name": "索尼",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-SZ3HG",
+          "name": "尼康",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-L92V8",
+          "name": "富士",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-6C4OL",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    },
+    {
+      "id": "compact",
+      "name": "卡片相机",
+      "color": "#d9901c",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-67JV7",
+          "name": "佳能",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-07",
+              "modelName": "佳能 G7 X Mark III 卡片相机",
+              "sn": "G7X3241102",
+              "condition": "99新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-06-29T02:20:00Z",
+              "updatedAt": "2026-06-29T02:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-08",
+              "modelName": "佳能 G7 X Mark III 卡片相机",
+              "sn": "G7X3241103",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-07-09T05:20:00Z",
+              "updatedAt": "2026-07-09T05:20:00Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVADT9Q7-OOW0X",
+          "name": "索尼",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-N2EQK",
+          "name": "松下",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-2ADW5",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    },
+    {
+      "id": "ccd",
+      "name": "CCD相机",
+      "color": "#2f9a63",
+      "icon": "camera",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-NV3Q9",
+          "name": "佳能",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-HMFAR",
+          "name": "索尼",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-CNT6Y",
+          "name": "尼康",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-SNZTO",
+          "name": "卡西欧",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-W322U",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    },
+    {
+      "id": "tripod",
+      "name": "落地三脚架",
+      "color": "#d95050",
+      "icon": "layers",
+      "subcategories": [
+        {
+          "id": "SUB-MVADT9Q7-VHRNZ",
+          "name": "富宝图",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": [
+            {
+              "id": "CAM-DEMO-09",
+              "modelName": "富宝图 FY-830-MH-4A",
+              "sn": "FY830MH4A01",
+              "condition": "95新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "液压云台，快装板齐全",
+              "createdAt": "2026-07-24T07:20:00Z",
+              "updatedAt": "2026-07-24T07:20:00Z"
+            },
+            {
+              "id": "CAM-DEMO-10",
+              "modelName": "富宝图 FY-830-MH-4A",
+              "sn": "FY830MH4A02",
+              "condition": "9成新",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "云台锁紧旋钮待更换",
+              "createdAt": "2026-08-08T03:20:00Z",
+              "updatedAt": "2026-08-08T03:20:00Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVADT9Q7-C9FCI",
+          "name": "曼富图",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-4Z84R",
+          "name": "思锐",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        },
+        {
+          "id": "SUB-MVADT9Q7-ODT9L",
+          "name": "其他",
+          "createdAt": "2026-10-16T03:02:04.927Z",
+          "models": []
+        }
+      ]
+    }
+  ]
+}

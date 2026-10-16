@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "isDemo": true,
+  "models": [
+    {
+      "id": "dji-pocket3",
+      "name": "大疆 Pocket 3 手持云台",
+      "shortName": "大疆 Pocket 3",
+      "category": "手持云台",
+      "dailyRate": 65,
+      "deposit": 600,
+      "color": "#e85d35"
+    },
+    {
+      "id": "insta360-acepro2",
+      "name": "影石 Ace Pro 2 运动相机",
+      "shortName": "影石 Ace Pro 2",
+      "category": "运动相机",
+      "dailyRate": 55,
+      "deposit": 500,
+      "color": "#376df2"
+    },
+    {
+      "id": "canon-r50",
+      "name": "佳能 R50 微单",
+      "shortName": "佳能 R50",
+      "category": "微单相机",
+      "dailyRate": 78,
+      "deposit": 800,
+      "color": "#7456d8"
+    },
+    {
+      "id": "canon-g7x3",
+      "name": "佳能 G7 X Mark III 卡片相机",
+      "shortName": "佳能 G7 X3",
+      "category": "卡片相机",
+      "dailyRate": 62,
+      "deposit": 600,
+      "color": "#d98a18"
+    },
+    {
+      "id": "fubaotu-fy830",
+      "name": "富宝图 FY-830-MH-4A",
+      "shortName": "富宝图 FY-830",
+      "category": "摄影辅助设备",
+      "dailyRate": 28,
+      "deposit": 200,
+      "color": "#2d8a58"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "CAM-DEMO-01",
+      "sn": "DJI-P3-240801",
+      "modelId": "dji-pocket3",
+      "condition": "99新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-02-09T01:20:00.000Z",
+      "purchaseDate": "2026-01-30",
+      "purchasePrice": 3499,
+      "dailyRate": 65,
+      "deposit": 600,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线",
+        "收纳包"
+      ],
+      "note": "外观良好，原装收纳包",
+      "sold": false,
+      "createdAt": "2026-02-09T01:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-02",
+      "sn": "DJI-P3-240802",
+      "modelId": "dji-pocket3",
+      "condition": "95新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-03-21T02:20:00.000Z",
+      "purchaseDate": "2026-03-11",
+      "purchasePrice": 3399,
+      "dailyRate": 65,
+      "deposit": 600,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线",
+        "收纳包"
+      ],
+      "note": "底部有轻微使用痕迹",
+      "sold": false,
+      "createdAt": "2026-03-21T02:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-03",
+      "sn": "ACE2-240915-01",
+      "modelId": "insta360-acepro2",
+      "condition": "99新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-04-10T03:20:00.000Z",
+      "purchaseDate": "2026-03-31",
+      "purchasePrice": 2698,
+      "dailyRate": 55,
+      "deposit": 500,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线"
+      ],
+      "note": "",
+      "sold": false,
+      "createdAt": "2026-04-10T03:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-04",
+      "sn": "ACE2-240915-02",
+      "modelId": "insta360-acepro2",
+      "condition": "95新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-04-30T06:20:00.000Z",
+      "purchaseDate": "2026-04-20",
+      "purchasePrice": 2599,
+      "dailyRate": 55,
+      "deposit": 500,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线"
+      ],
+      "note": "",
+      "sold": false,
+      "createdAt": "2026-04-30T06:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-05",
+      "sn": "CANON-R50-2301",
+      "modelId": "canon-r50",
+      "condition": "95新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-05-20T01:20:00.000Z",
+      "purchaseDate": "2026-05-10",
+      "purchasePrice": 4599,
+      "dailyRate": 78,
+      "deposit": 800,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线",
+        "内存卡"
+      ],
+      "note": "套机 18-45mm 镜头",
+      "sold": false,
+      "createdAt": "2026-05-20T01:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-06",
+      "sn": "CANON-R50-2302",
+      "modelId": "canon-r50",
+      "condition": "9成新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-06-09T08:20:00.000Z",
+      "purchaseDate": "2026-05-30",
+      "purchasePrice": 4399,
+      "dailyRate": 75,
+      "deposit": 800,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线"
+      ],
+      "note": "",
+      "sold": false,
+      "createdAt": "2026-06-09T08:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-07",
+      "sn": "G7X3-241102",
+      "modelId": "canon-g7x3",
+      "condition": "99新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-06-29T02:20:00.000Z",
+      "purchaseDate": "2026-06-19",
+      "purchasePrice": 4899,
+      "dailyRate": 62,
+      "deposit": 600,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线",
+        "收纳包"
+      ],
+      "note": "",
+      "sold": false,
+      "createdAt": "2026-06-29T02:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-08",
+      "sn": "G7X3-241103",
+      "modelId": "canon-g7x3",
+      "condition": "95新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-07-09T05:20:00.000Z",
+      "purchaseDate": "2026-06-29",
+      "purchasePrice": 4799,
+      "dailyRate": 62,
+      "deposit": 600,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线"
+      ],
+      "note": "",
+      "sold": false,
+      "createdAt": "2026-07-09T05:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-09",
+      "sn": "FY830-MH-4A-01",
+      "modelId": "fubaotu-fy830",
+      "condition": "95新",
+      "serviceStatus": "normal",
+      "inboundAt": "2026-07-24T07:20:00.000Z",
+      "purchaseDate": "2026-07-14",
+      "purchasePrice": 899,
+      "dailyRate": 28,
+      "deposit": 200,
+      "accessories": [
+        "主机",
+        "其他"
+      ],
+      "note": "液压云台，快装板齐全",
+      "sold": false,
+      "createdAt": "2026-07-24T07:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-10",
+      "sn": "FY830-MH-4A-02",
+      "modelId": "fubaotu-fy830",
+      "condition": "9成新",
+      "serviceStatus": "maintenance",
+      "inboundAt": "2026-08-08T03:20:00.000Z",
+      "purchaseDate": "2026-07-29",
+      "purchasePrice": 799,
+      "dailyRate": 28,
+      "deposit": 200,
+      "accessories": [
+        "主机"
+      ],
+      "note": "云台锁紧旋钮待更换",
+      "sold": false,
+      "createdAt": "2026-08-08T03:20:00.000Z"
+    },
+    {
+      "id": "CAM-DEMO-11",
+      "sn": "DJI-P3-220701",
+      "modelId": "dji-pocket3",
+      "condition": "8成新",
+      "serviceStatus": "normal",
+      "inboundAt": "2025-10-22T01:20:00.000Z",
+      "purchaseDate": "2025-10-02",
+      "purchasePrice": 3299,
+      "dailyRate": 58,
+      "deposit": 500,
+      "accessories": [
+        "主机",
+        "电池",
+        "充电器/线"
+      ],
+      "note": "已作为二手设备出售",
+      "sold": true,
+      "soldAt": "2026-09-05T09:20:00.000Z",
+      "createdAt": "2025-10-22T01:20:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-DEMO-01",
+      "cameraId": "CAM-DEMO-01",
+      "renter": {
+        "name": "张晨",
+        "phone": "13800138001",
+        "idCard": "310101199203151234"
+      },
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-20",
+      "dailyRate": 65,
+      "deposit": 600,
+      "rentFee": 390,
+      "status": "rented",
+      "deliveryMethod": "到店自取",
+      "note": "证件已核验",
+      "createdAt": "2026-09-14T10:20:00.000Z",
+      "outboundAt": "2026-09-15T02:20:00.000Z"
+    },
+    {
+      "id": "ORD-DEMO-02",
+      "cameraId": "CAM-DEMO-03",
+      "renter": {
+        "name": "李可",
+        "phone": "13900139002",
+        "idCard": "320102199511082456"
+      },
+      "startDate": "2026-09-22",
+      "endDate": "2026-09-25",
+      "dailyRate": 55,
+      "deposit": 500,
+      "rentFee": 220,
+      "status": "booked",
+      "deliveryMethod": "同城配送",
+      "note": "出发前一天确认取机时间",
+      "createdAt": "2026-09-16T06:20:00.000Z"
+    },
+    {
+      "id": "ORD-DEMO-03",
+      "cameraId": "CAM-DEMO-05",
+      "renter": {
+        "name": "王屿",
+        "phone": "15600156003",
+        "idCard": "330106198809201357"
+      },
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-16",
+      "dailyRate": 78,
+      "deposit": 800,
+      "rentFee": 780,
+      "status": "rented",
+      "deliveryMethod": "到店自取",
+      "note": "",
+      "createdAt": "2026-09-05T04:20:00.000Z",
+      "outboundAt": "2026-09-07T01:20:00.000Z"
+    },
+    {
+      "id": "ORD-DEMO-04",
+      "cameraId": "CAM-DEMO-08",
+      "renter": {
+        "name": "陈一",
+        "phone": "13700137004",
+        "idCard": "440106199901013579"
+      },
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-28",
+      "dailyRate": 62,
+      "deposit": 600,
+      "rentFee": 372,
+      "status": "returned",
+      "deliveryMethod": "到店自取",
+      "note": "已正常归还",
+      "createdAt": "2026-08-21T11:20:00.000Z",
+      "outboundAt": "2026-08-23T02:20:00.000Z",
+      "returnedAt": "2026-08-28T09:20:00.000Z",
+      "actualReturnDate": "2026-08-28",
+      "settlement": {
+        "lateFee": 0,
+        "damageFee": 0,
+        "otherFee": 0,
+        "refundAmount": 600
+      }
+    },
+    {
+      "id": "ORD-DEMO-05",
+      "cameraId": "CAM-DEMO-01",
+      "renter": {
+        "name": "周宁",
+        "phone": "13500135005",
+        "idCard": "510107199707073680"
+      },
+      "startDate": "2026-09-27",
+      "endDate": "2026-09-29",
+      "dailyRate": 65,
+      "deposit": 600,
+      "rentFee": 195,
+      "status": "booked",
+      "deliveryMethod": "快递寄送",
+      "note": "老客户复租",
+      "createdAt": "2026-09-16T08:20:00.000Z"
+    },
+    {
+      "id": "ORD-DEMO-06",
+      "cameraId": "CAM-DEMO-07",
+      "renter": {
+        "name": "林禾",
+        "phone": "18800188006",
+        "idCard": "350102200001019246"
+      },
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-18",
+      "dailyRate": 62,
+      "deposit": 600,
+      "rentFee": 186,
+      "status": "rented",
+      "deliveryMethod": "到店自取",
+      "note": "搭配内存卡出租",
+      "createdAt": "2026-09-15T07:20:00.000Z",
+      "outboundAt": "2026-09-16T01:20:00.000Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "ACT-MU4V4ULH-X609F",
+      "type": "outbound",
+      "title": "相机出库：张晨",
+      "detail": "大疆 Pocket 3 · DJI-P3-240801",
+      "createdAt": "2026-09-15T02:20:00.000Z"
+    },
+    {
+      "id": "ACT-MU4V4ULH-MC1NJ",
+      "type": "return",
+      "title": "相机归还：陈一",
+      "detail": "佳能 G7 X Mark III · G7X3-241103",
+      "createdAt": "2026-08-28T09:20:00.000Z"
+    },
+    {
+      "id": "ACT-MU4V4ULH-5JE42",
+      "type": "sold",
+      "title": "设备已售出并永久锁定",
+      "detail": "大疆 Pocket 3 · DJI-P3-220701",
+      "createdAt": "2026-09-05T09:20:00.000Z"
+    },
+    {
+      "id": "ACT-MU4V4ULH-YK507",
+      "type": "system",
+      "title": "载入演示数据",
+      "detail": "系统初始化完成",
+      "createdAt": "2026-09-16T01:20:00.000Z"
+    }
+  ],
+  "createdAt": "2026-09-17T01:40:39.269Z",
+  "updatedAt": "2026-09-17T01:40:39.391Z"
+}
