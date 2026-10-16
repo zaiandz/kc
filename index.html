@@ -29,6 +29,7 @@
     <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
     <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
     <symbol id="icon-move" viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.82c.85 0 1.7.11 2.5.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></symbol>
     <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></symbol>
   </svg>
 
@@ -75,6 +76,7 @@
         </div>
         <div class="topbar-actions">
           <div class="save-indicator" id="saveIndicator"><i></i><span>正在连接</span></div>
+          <button class="btn btn-light" id="githubSyncButton" data-action="open-github-sync"><svg><use href="#icon-github"></use></svg><span>保存到 GitHub</span></button>
           <button class="btn btn-light import-button" data-action="import-document" title="支持 xlsx、xlsm、xltx、xltm、csv、tsv、docx、docm、dotx、dotm"><svg><use href="#icon-upload"></use></svg><span>导入 Excel / Word</span></button>
           <button class="btn btn-light" data-action="add-subcategory"><svg><use href="#icon-folder"></use></svg><span>新增小类目</span></button>
           <button class="btn btn-primary" data-action="add-model"><svg><use href="#icon-plus"></use></svg><span>新增机型</span></button>
@@ -241,6 +243,29 @@
         <label class="field"><span>目标小类目 <b>*</b></span><select name="targetSubcategory" id="copyTargetSubcategory" required></select></label>
         <label class="field"><span>复制数量 <b>*</b></span><input name="quantity" id="copyQuantity" type="number" min="1" max="100" step="1" value="1" required><small>可一次复制 1-100 条同型号机型</small></label>
         <div class="form-actions field-full"><button type="button" class="btn btn-light" data-close-modal>取消</button><button type="submit" class="btn btn-primary">复制同型号</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="githubSyncModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div><span class="eyebrow">GITHUB SYNC</span><h2>保存库存数据到 GitHub</h2><p>将当前浏览器中的库存数据提交到 zaiandz/kc 的 data/state.json</p></div>
+        <button class="icon-button" data-close-modal aria-label="关闭"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <form id="githubSyncForm" class="form-grid">
+        <div class="move-summary field-full">
+          <strong>目标仓库：zaiandz/kc</strong>
+          <div class="move-current">需要创建一个细粒度 Personal Access Token，仅授权该仓库，并给 Contents 权限设置为 Read and write。Token 只用于提交库存数据。</div>
+        </div>
+        <label class="field field-full"><span>GitHub Token <b>*</b></span><input name="token" id="githubToken" type="password" autocomplete="off" placeholder="github_pat_..." required></label>
+        <label class="field field-full checkbox-line"><input name="remember" type="checkbox" id="githubRememberToken"><span>在此浏览器中记住 Token</span></label>
+        <div class="form-actions field-full github-sync-actions">
+          <button type="button" class="btn btn-light" data-action="open-github-token">创建 Token</button>
+          <button type="button" class="btn btn-light" data-close-modal>取消</button>
+          <button type="submit" class="btn btn-primary">提交到 GitHub</button>
+        </div>
       </form>
     </div>
   </div>

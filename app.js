@@ -192,7 +192,7 @@
       this.pendingMoveKeys = [];
       this.saveTimer = null;
       this.saveQueue = Promise.resolve();
-      this.storageInfo = { online: false, writable: false, importReady: false, dataFile: 'data/state.json', lastSavedAt: '', saving: false };
+      this.storageInfo = { online: false, writable: false, importReady: false, staticMode: false, dataFile: 'data/state.json', lastSavedAt: '', saving: false };
       this.bindEvents();
       this.populateFixedSelects();
       this.refreshClock();
@@ -218,11 +218,35 @@
       try { localStorage.setItem(STORAGE_KEY, JSON.stringify(this.state)); } catch (_) {}
     }
 
+    async loadStaticState() {
+      try {
+        const staticResponse = await fetch('data/state.json', { cache: 'no-store' });
+        if (!staticResponse.ok) return false;
+        const staticState = await staticResponse.json();
+        if (!staticState || !Array.isArray(staticState.categories)) return false;
+        this.state = normalizeState(staticState);
+        this.cacheLocally();
+        this.storageInfo.online = false;
+        this.storageInfo.writable = false;
+        this.storageInfo.importReady = false;
+        this.storageInfo.staticMode = true;
+        this.renderAll();
+        this.renderStorageStatus('static');
+        this.toast('已进入在线展示模式', '库存数据来自 data/state.json，修改仅保存在当前浏览器。', 'warning');
+        return true;
+      } catch (_) {
+        return false;
+      }
+    }
     async initializeStorage() {
       this.renderStorageStatus('connecting');
       if (!this.canUseFolderStorage()) {
         this.renderStorageStatus('offline');
         return false;
+      }
+      if (/\.github\.io$/i.test(location.hostname)) {
+        const loaded = await this.loadStaticState();
+        if (loaded) return false;
       }
       try {
         const healthResponse = await fetch('/api/health', { cache: 'no-store' });
@@ -251,6 +275,7 @@
         this.renderStorageStatus('saved');
         return true;
       } catch (error) {
+        if (await this.loadStaticState()) return false;
         this.storageInfo.online = false;
         this.storageInfo.writable = false;
         this.renderStorageStatus('offline');
@@ -305,6 +330,7 @@
 
     renderStorageStatus(status = '') {
       const online = this.storageInfo.online && this.storageInfo.writable;
+      const staticMode = this.storageInfo.staticMode && !online;
       const card = qs('#storageCard');
       const title = qs('#storageTitle');
       const text = qs('#storageText');
@@ -313,14 +339,13 @@
         card.classList.toggle('server-online', online);
         card.classList.toggle('server-offline', !online);
       }
-      if (title) title.textContent = online ? '网站文件夹存储' : '浏览器临时缓存';
-      if (text) text.textContent = online ? this.storageInfo.dataFile : '文件夹服务未连接';
+      if (title) title.textContent = online ? '网站文件夹存储' : staticMode ? '在线展示模式' : '浏览器临时缓存';
+      if (text) text.textContent = online ? this.storageInfo.dataFile : staticMode ? '数据只读 · 修改保存在浏览器' : '文件夹服务未连接';
       if (indicator) {
         indicator.className = 'save-indicator ' + (status === 'saving' ? 'saving' : status === 'saved' ? 'saved' : status === 'error' ? 'error' : '');
-        indicator.querySelector('span').textContent = status === 'saving' ? '正在保存…' : status === 'saved' ? `已保存 ${formatDateTime(this.storageInfo.lastSavedAt).slice(11) || ''}` : status === 'error' ? '保存异常' : '正在连接';
+        indicator.querySelector('span').textContent = status === 'saving' ? '正在保存…' : status === 'saved' ? `已保存 ${formatDateTime(this.storageInfo.lastSavedAt).slice(11) || ''}` : status === 'error' ? '保存异常' : staticMode ? '在线展示模式' : '正在连接';
       }
     }
-
     refreshClock() {
       const now = new Date();
       const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
@@ -339,6 +364,7 @@
       qs('#subcategoryForm').addEventListener('submit', (event) => this.submitSubcategory(event));
       qs('#modelForm').addEventListener('submit', (event) => this.submitModel(event));
       qs('#moveModelForm').addEventListener('submit', (event) => this.submitMoveModels(event));
+      qs('#githubSyncForm').addEventListener('submit', (event) => this.submitGitHubSync(event));
       qs('#copyModelForm').addEventListener('submit', (event) => this.submitCopyModel(event));
       qs('#moveTargetCategory').addEventListener('change', () => this.populateMoveSubcategories());
       qs('#moveTargetSubcategory').addEventListener('change', () => this.syncMoveNewSubcategory());
@@ -1000,6 +1026,10 @@
         this.toast('当前不是服务模式', '请关闭本页面，双击 start-website.bat，等待浏览器打开正确网址后再导入。', 'error');
         return;
       }
+      if (this.storageInfo.staticMode) {
+        this.toast('在线展示模式不支持导入', 'GitHub Pages 只能展示库存；Excel / Word 导入和数据写入请在本地通过 start-website.bat 使用。', 'warning');
+        return;
+      }
       if (!this.storageInfo.importReady) {
         this.toast('导入服务未就绪', '请关闭所有启动窗口，重新双击 start-website.bat 后再试。', 'error');
         return;
@@ -1147,6 +1177,71 @@
         <div><span>警告</span><strong>${warnings.length}</strong></div>
       </div>
       ${warnings.length ? `<div class="import-report-warnings"><strong>需要核对的内容</strong>${warnings.map((warning) => `<span>${escapeHtml(warning)}</span>`).join('')}</div>` : '<div class="import-report-ok">所有识别到的记录都已直接写入库存文件。</div>'}`;
+    }
+    openGitHubSync() {
+      const savedToken = localStorage.getItem('hubei-shigan-github-token') || sessionStorage.getItem('hubei-shigan-github-token') || '';
+      qs('#githubToken').value = savedToken;
+      qs('#githubRememberToken').checked = Boolean(localStorage.getItem('hubei-shigan-github-token'));
+      this.openModal('githubSyncModal');
+    }
+
+    async submitGitHubSync(event) {
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+      const token = String(formData.get('token') || '').trim();
+      const remember = formData.get('remember') === 'on';
+      if (!token) return this.toast('Token 不能为空', '请填写具有 Contents 读写权限的 GitHub Token。', 'error');
+      if (remember) {
+        localStorage.setItem('hubei-shigan-github-token', token);
+        sessionStorage.removeItem('hubei-shigan-github-token');
+      } else {
+        sessionStorage.setItem('hubei-shigan-github-token', token);
+        localStorage.removeItem('hubei-shigan-github-token');
+      }
+
+      const owner = 'zaiandz';
+      const repo = 'kc';
+      const branch = 'main';
+      const path = 'data/state.json';
+      const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+      const headers = {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': `Bearer ${token}`,
+        'X-GitHub-Api-Version': '2022-11-28'
+      };
+      this.setImportBusy(true, 'GitHub');
+      try {
+        const metaResponse = await fetch(`${apiUrl}?ref=${encodeURIComponent(branch)}`, { headers, cache: 'no-store' });
+        let sha = '';
+        if (metaResponse.status === 200) {
+          const meta = await metaResponse.json();
+          sha = meta.sha || '';
+        } else if (metaResponse.status !== 404) {
+          const error = await metaResponse.json().catch(() => ({}));
+          throw new Error(error.message || `读取 GitHub 数据失败（${metaResponse.status}）`);
+        }
+
+        const json = JSON.stringify(this.state, null, 2);
+        const bytes = new TextEncoder().encode(json);
+        const content = this.arrayBufferToBase64(bytes.buffer);
+        const message = `Update inventory data ${new Date().toISOString().slice(0, 19).replace('T', ' ')}`;
+        const body = { message, content, branch };
+        if (sha) body.sha = sha;
+        const putResponse = await fetch(apiUrl, {
+          method: 'PUT',
+          headers: { ...headers, 'Content-Type': 'application/json; charset=utf-8' },
+          body: JSON.stringify(body)
+        });
+        const result = await putResponse.json().catch(() => ({}));
+        if (!putResponse.ok || !result.content) throw new Error(result.message || `提交 GitHub 失败（${putResponse.status}）`);
+        this.closeModal('githubSyncModal');
+        this.toast('已保存到 GitHub', 'data/state.json 已提交，GitHub Pages 将自动重新部署。');
+        if (result.commit && result.commit.html_url) window.open(result.commit.html_url, '_blank', 'noopener');
+      } catch (error) {
+        this.toast('GitHub 保存失败', error.message || '请检查 Token 权限和网络连接。', 'error');
+      } finally {
+        this.setImportBusy(false);
+      }
     }
     openCopyModal() {
       if (this.selectedModels.size !== 1) {
@@ -1385,6 +1480,8 @@
         else if (action === 'move-selected') this.openMoveModal([...this.selectedModels]);
         else if (action === 'delete-selected') this.deleteSelectedModels();
         else if (action === 'copy-selected') this.openCopyModal();
+        else if (action === 'open-github-sync') this.openGitHubSync();
+        else if (action === 'open-github-token') window.open('https://github.com/settings/personal-access-tokens/new','_blank','noopener');
         else if (action === 'clear-selection') {
           this.selectedModels.clear();
           qsa('[data-role="select-model"]').forEach((checkbox) => { checkbox.checked = false; });
@@ -1417,6 +1514,13 @@
 
   window.inventoryManager = new InventoryManager();
 })();
+
+
+
+
+
+
+
 
 
 

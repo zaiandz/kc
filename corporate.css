@@ -228,3 +228,8 @@ body::before, body::after { display: none !important; }
   pointer-events:none !important;
   overflow:hidden !important;
 }
+
+.checkbox-line { flex-direction:row !important; align-items:center; gap:8px; }
+.checkbox-line input { width:18px !important; height:18px !important; min-height:18px !important; }
+.checkbox-line span { font-weight:600; }
+.github-sync-actions { justify-content:space-between; flex-wrap:wrap; }
