@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T07:54:40.249Z",
+  "updatedAt": "2026-10-18T07:57:23.620Z",
   "categories": [
     {
       "id": "gimbal",
@@ -226,17 +226,17 @@
             {
               "id": "MODEL-MVALF2RV-Q1XYL",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTCN6V0022ZRM",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-06-17",
+              "warrantyEnd": "2027-06-16",
+              "refreshEnd": "2027-06-16",
               "sold": false,
-              "note": "",
+              "note": "剩余四次随心换",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:16",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-18T07:57:23.169Z"
             },
             {
               "id": "MODEL-MVALF2RV-MX0QM",
