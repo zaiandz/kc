@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T07:57:23.620Z",
+  "updatedAt": "2026-10-18T08:06:07.445Z",
   "categories": [
     {
       "id": "gimbal",
@@ -848,7 +848,7 @@
             {
               "id": "MODEL-MVAMTMYV-5B65J",
               "modelName": "影石insta X6",
-              "sn": "",
+              "sn": "BXEA3ABHR9CXUS",
               "condition": "95新",
               "warrantyStatus": "yes",
               "activationDate": "2026-09-30",
@@ -858,7 +858,7 @@
               "note": "无购买无忧换",
               "createdAt": "2026-10-16T07:14:18.631Z",
               "importKey": "",
-              "updatedAt": "2026-10-16T07:16:41.905Z"
+              "updatedAt": "2026-10-18T08:06:06.994Z"
             }
           ]
         },
