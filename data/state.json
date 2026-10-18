@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-16T07:23:38.374Z",
+  "updatedAt": "2026-10-18T07:54:40.249Z",
   "categories": [
     {
       "id": "gimbal",
@@ -26,7 +26,7 @@
               "note": "剩余三次随心换",
               "createdAt": "2026-10-16T05:57:06.179Z",
               "importKey": "大疆pocket3:2",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-18T07:54:39.787Z"
             },
             {
               "id": "MODEL-MVAK2CJN-IL9OY",
@@ -181,47 +181,47 @@
             {
               "id": "MODEL-MVALF2RU-PAFAA",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTZN5E002V7J5",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-08-30",
+              "warrantyEnd": "2027-08-30",
+              "refreshEnd": "2027-08-30",
               "sold": false,
-              "note": "",
+              "note": "剩余四次随心换",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:13",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-18T07:49:25.140Z"
             },
             {
               "id": "MODEL-MVALF2RV-OD3L2",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTZN910021NW8",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "no",
+              "activationDate": "2025-09-23",
+              "warrantyEnd": "2026-09-24",
+              "refreshEnd": "2026-09-24",
               "sold": false,
-              "note": "",
+              "note": "随心换已到期",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:14",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-18T07:53:37.700Z"
             },
             {
               "id": "MODEL-MVALF2RV-G5O0G",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTZNA8002Q50N",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-10-27",
+              "warrantyEnd": "2026-11-02",
+              "refreshEnd": "2026-11-02",
               "sold": false,
-              "note": "",
+              "note": "剩余二次随心换",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:15",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-18T07:54:35.394Z"
             },
             {
               "id": "MODEL-MVALF2RV-Q1XYL",
