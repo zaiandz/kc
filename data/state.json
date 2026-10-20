@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-18T08:06:07.445Z",
+  "updatedAt": "2026-10-20T02:50:19.677Z",
   "categories": [
     {
       "id": "gimbal",
@@ -241,47 +241,47 @@
             {
               "id": "MODEL-MVALF2RV-MX0QM",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTCN7F002AZXR",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "no",
+              "activationDate": "2025-08-24",
+              "warrantyEnd": "2026-08-23",
+              "refreshEnd": "2026-08-13",
               "sold": false,
-              "note": "",
+              "note": "随心换已到期",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:17",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-20T02:38:48.312Z"
             },
             {
               "id": "MODEL-MVALF2RV-QNKSJ",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WT6NA4002R312",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "yes",
+              "activationDate": "2025-10-20",
+              "warrantyEnd": "2027-04-03",
+              "refreshEnd": "2027-04-03",
               "sold": false,
-              "note": "",
+              "note": "剩余三次随心换",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:18",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-20T02:44:15.143Z"
             },
             {
               "id": "MODEL-MVALF2RV-BS425",
               "modelName": "大疆Pocket3",
-              "sn": "",
+              "sn": "5WTCN7V002FB53",
               "condition": "95新",
-              "warrantyStatus": "unknown",
-              "activationDate": "",
-              "warrantyEnd": "",
-              "refreshEnd": "",
+              "warrantyStatus": "no",
+              "activationDate": "2025-09-25",
+              "warrantyEnd": "2026-09-26",
+              "refreshEnd": "2026-09-25",
               "sold": false,
-              "note": "",
+              "note": "随心换已到期",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "大疆pocket3:19",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-20T02:48:49.494Z"
             },
             {
               "id": "MODEL-MVALF2RV-28N5M",
@@ -1110,7 +1110,7 @@
             {
               "id": "MODEL-MVALF2RV-SK4DL",
               "modelName": "佳能G7x3",
-              "sn": "",
+              "sn": "524059002875",
               "condition": "95新",
               "warrantyStatus": "unknown",
               "activationDate": "",
@@ -1120,7 +1120,7 @@
               "note": "",
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "佳能G7x3:70",
-              "updatedAt": "2026-10-16T06:35:34.250Z"
+              "updatedAt": "2026-10-20T02:50:19.225Z"
             },
             {
               "id": "MODEL-MVALF2RV-IETCP",
