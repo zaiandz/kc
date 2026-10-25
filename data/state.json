@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-22T04:09:01.880Z",
+  "updatedAt": "2026-10-25T10:59:46.819Z",
   "categories": [
     {
       "id": "gimbal",
@@ -1151,6 +1151,57 @@
               "createdAt": "2026-10-16T06:34:59.658Z",
               "importKey": "佳能G7x3:72",
               "updatedAt": "2026-10-16T06:35:34.250Z"
+            }
+          ]
+        },
+        {
+          "id": "SUB-MVNPTJS2-ZENAO",
+          "name": "佳能 G12",
+          "createdAt": "2026-10-25T10:59:13.634Z",
+          "models": [
+            {
+              "id": "MODEL-MVNPTNAB-OJOSW",
+              "modelName": "佳能 G12",
+              "sn": "248051003022",
+              "condition": "",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "createdAt": "2026-10-25T10:59:18.179Z",
+              "updatedAt": "2026-10-25T10:59:22.548Z"
+            },
+            {
+              "id": "MODEL-MVNPTZEW-433GN",
+              "modelName": "佳能 G12",
+              "sn": "248051000067",
+              "condition": "",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "importKey": "",
+              "createdAt": "2026-10-25T10:59:33.896Z",
+              "updatedAt": "2026-10-25T10:59:39.633Z"
+            },
+            {
+              "id": "MODEL-MVNPTZEX-EHVSY",
+              "modelName": "佳能 G12",
+              "sn": "258052005832",
+              "condition": "",
+              "warrantyStatus": "unknown",
+              "activationDate": "",
+              "warrantyEnd": "",
+              "refreshEnd": "",
+              "sold": false,
+              "note": "",
+              "importKey": "",
+              "createdAt": "2026-10-25T10:59:33.896Z",
+              "updatedAt": "2026-10-25T10:59:46.368Z"
             }
           ]
         }
